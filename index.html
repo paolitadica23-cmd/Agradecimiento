@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias por tu mensaje ✨</title>
+  <style>
+    :root {
+      --primary-color: #d94b4b;
+      --bg-gradient: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      --card-bg: #ffffff;
+      --text-color: #4a4a4a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeIn 1s forwards ease-out;
+    }
+
+    @keyframes fadeIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #777;
+      font-size: 0.95em;
+      margin-bottom: 25px;
+      font-style: italic;
+    }
+
+    .letter-content {
+      text-align: left;
+      line-height: 1.8;
+      color: var(--text-color);
+      font-size: 1.05em;
+    }
+
+    .letter-content p {
+      margin-bottom: 18px;
+    }
+
+    .highlight {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .quote-box {
+      background: #fff8f5;
+      border-left: 4px solid var(--primary-color);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px dashed #eee;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="icon">✉️✨</div>
+    <h1>Gracias por recordarme</h1>
+    <div class="subtitle">Una respuesta a tu mensaje del 5 de noviembre</div>
+
+    <div class="letter-content">
+      <p>Hola,</p>
+
+      <p>Te confieso que <span class="highlight">no me esperaba tu mensaje</span> ayer en mi cumpleaños, pero fue un detalle muy bonito que valoré mucho.</p>
+
+      <div class="quote-box">
+        "Hay sentimientos bonitos que merecen estar por encima de cualquier diferencia..."
+      </div>
+
+      <p>Tienes razón. Aunque la distancia, los silencios o las diferencias a veces nos hayan ganado, me alegra saber que entre nosotros sigue existiendo ese respeto y ese cariño sincero.</p>
+
+      <p>Gracias por tomarte el tiempo de escribirme, por tus buenos deseos y por enviarme ese abrazo desde lejos. A mí también me habría gustado poder darte un abrazo, pero me llegó completo con cada una de tus palabras.</p>
+
+      <p>También deseo de corazón que la vida te trate bonito, que tengas mucha salud y que logres todo lo que te propones. Independientemente de todo, tú también tienes un lugar especial en mis recuerdos.</p>
+    </div>
+
+    <div class="footer">
+      Un abrazo con mucho cariño. ❤️
+    </div>
+  </div>
+
+</body>
+</html>
